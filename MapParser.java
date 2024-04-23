@@ -15,12 +15,12 @@ public class MapParser {
             while ((line = reader.readLine()) != null) {
                 for (int x = 0; x < line.length(); x++) {
                     char symbol = line.charAt(x);
-                    Node node = new Node(x + 1, y + 1, symbol); // Adjusting x and y to start from 1
+                    Node node = new Node(x + 1, y + 1, symbol); 
                     graph.addNode(node);
 
                     if (symbol != '0') {
-                        Node left = graph.getNode(x, y + 1); // Adjusting left neighbor coordinates
-                        Node top = graph.getNode(x + 1, y); // Adjusting top neighbor coordinates
+                        Node left = graph.getNode(x, y + 1); 
+                        Node top = graph.getNode(x + 1, y); 
 
                         if (left != null && left.getCellType() != '0') {
                             node.addNeighbor(left);
