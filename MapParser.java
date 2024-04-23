@@ -1,3 +1,6 @@
+//Name: Dulin Perera 
+//Student ID: 20221379/w1956119
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
